@@ -38,7 +38,10 @@ dependencies {
     implementation group: 'org.json', name: 'json', version: '20210307'
 
     //lombok lib
-    implementation ('org.projectlombok:lombok')
+    annotationProcessor 'org.projectlombok:lombok'
+    implementation 'org.projectlombok:lombok'
+    testAnnotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.projectlombok:lombok'
 }
 
 test {
