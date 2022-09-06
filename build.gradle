@@ -49,10 +49,10 @@ dependencies {
 
     //spring data jpa
     implementation ('org.springframework.boot:spring-boot-starter-data-jpa')
-    //implementation('com.h2database:h2')
     runtimeOnly 'com.h2database:h2:1.4.197'
-    //runtimeOnly 'com.h2database:h2'
 
+    //머스태치(Mustache)
+    implementation('org.springframework.boot:spring-boot-starter-mustache')
 }
 
 test {
