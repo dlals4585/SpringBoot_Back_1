@@ -5,6 +5,7 @@ import com.trip.admin.web.vo.PostsResponseDto;
 import com.trip.admin.web.vo.PostsSaveRequestDto;
 import com.trip.admin.web.vo.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
+import org.hibernate.annotations.SQLDeleteAll;
 import org.springframework.web.bind.annotation.*;
 
 @RequiredArgsConstructor
@@ -25,5 +26,11 @@ public class PostsApiController {
     @GetMapping("/api/v1/posts/{id}")
     public PostsResponseDto findById (@PathVariable Long id){
         return postsService.findById(id);
+    }
+
+    @DeleteMapping("/api/v1/posts/{id}")
+    public Long delete(@PathVariable Long id){
+        postsService.delete(id);
+        return id;
     }
 }
