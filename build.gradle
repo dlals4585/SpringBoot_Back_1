@@ -53,6 +53,13 @@ dependencies {
 
     //머스태치(Mustache)
     implementation('org.springframework.boot:spring-boot-starter-mustache')
+
+    //스프링 시큐리티(막강한 인증과 인가 기능을 가진 프레임워크(스프링 보안 표준))
+    implementation('org.springframework.boot:spring-boot-starter-oauth2-client')
+    testImplementation('org.springframework.security:spring-security-test')
+    //spring-session-jdbc 등록(데이터베이스를 세션 저장소로 사용)
+    implementation('org.springframework.session:spring-session-jdbc')
+
 }
 
 test {
