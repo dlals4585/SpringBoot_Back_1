@@ -60,6 +60,7 @@ dependencies {
     //spring-session-jdbc 등록(데이터베이스를 세션 저장소로 사용)
     implementation('org.springframework.session:spring-session-jdbc')
 
+    implementation('org.mariadb.jdbc:mariadb-java-client')
 }
 
 test {
