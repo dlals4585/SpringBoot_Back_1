@@ -60,7 +60,9 @@ dependencies {
     //spring-session-jdbc 등록(데이터베이스를 세션 저장소로 사용)
     implementation('org.springframework.session:spring-session-jdbc')
 
-    implementation('org.mariadb.jdbc:mariadb-java-client')
+    //implementation('org.mariadb.jdbc:mariadb-java-client')
+    //https://mavenlibs.com/maven/dependency/org.mariadb.jdbc/mariadb-java-client 참조(mariadb연동)
+    implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '3.0.8'
 }
 
 test {
